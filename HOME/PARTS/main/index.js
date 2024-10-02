@@ -35,7 +35,7 @@
 
 
   // Create the Sun
-  const sunTexture = textureLoader.load("textures/sun.jpg");
+  const sunTexture = textureLoader.load("/textures/sun.jpg");
   const sungeo = new THREE.SphereGeometry(15, 50, 50);
   const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture });
   const sun = new THREE.Mesh(sungeo, sunMaterial);
@@ -58,16 +58,16 @@
   const stars = getStarfield({numStars: 2000});
   scene.add(stars);
 
-  const mercuryTexture = textureLoader.load("textures/mercury.jpg");
-  const earthTexture = textureLoader.load("textures/00_earthmap1k.jpg");
-  const venusTexture = textureLoader.load("textures/venus.jpg");
-  const marsTexture = textureLoader.load("textures/mars.jpg");
-  const jupiterTexture = textureLoader.load("textures/jupiter.jpg");
-  const saturnTexture = textureLoader.load("textures/saturn.jpg");
-  const uranusTexture = textureLoader.load("textures/uranus.jpg");
-  const neptuneTexture = textureLoader.load("textures/neptune.jpg");
-  const plutoTexture = textureLoader.load("textures/pluto.jpg");
-  const saturnRingTexture = textureLoader.load("textures/saturn_ring.png");
+  const mercuryTexture = textureLoader.load("/textures/mercury.jpg");
+  const earthTexture = textureLoader.load("/textures/00_earthmap1k.jpg");
+  const venusTexture = textureLoader.load("/textures/venus.jpg");
+  const marsTexture = textureLoader.load("/textures/mars.jpg");
+  const jupiterTexture = textureLoader.load("/textures/jupiter.jpg");
+  const saturnTexture = textureLoader.load("/textures/saturn.jpg");
+  const uranusTexture = textureLoader.load("/textures/uranus.jpg");
+  const neptuneTexture = textureLoader.load("/textures/neptune.jpg");
+  const plutoTexture = textureLoader.load("/textures/pluto.jpg");
+  const saturnRingTexture = textureLoader.load("/textures/saturn_ring.png");
   const path_of_planets = [];
   function createLineLoopWithMesh(radius, color, width) {
     const material = new THREE.LineBasicMaterial({
